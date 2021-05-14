@@ -34,7 +34,6 @@ class _LoadingScreenState extends State<LoadingScreen> {
     var url = Uri.parse(
         'https://samples.openweathermap.org/data/2.5/weather?lat=35&lon=139&appid=960991f38d501f8e644c4549c9aab49b');
     http.Response response = await http.get(url);
-    print(response);
   }
 
   @override
