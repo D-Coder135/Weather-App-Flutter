@@ -30,7 +30,7 @@ class _LoadingScreenState extends State<LoadingScreen> {
     print(location.longitude);
   }
 
-  void getData() {}
+  void getData() async {}
 
   @override
   Widget build(BuildContext context) {
