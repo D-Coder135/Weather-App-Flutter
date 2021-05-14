@@ -7,7 +7,7 @@ class LoadingScreen extends StatefulWidget {
 }
 
 class _LoadingScreenState extends State<LoadingScreen> {
-  void getLocation() {}
+  void getLocation() async {}
 
   @override
   Widget build(BuildContext context) {
