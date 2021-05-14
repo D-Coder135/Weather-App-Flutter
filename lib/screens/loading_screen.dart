@@ -24,6 +24,7 @@ class _LoadingScreenState extends State<LoadingScreen> {
     // } catch (exception) {
     //   print(exception);
     // }
+    Location location = Location();
   }
 
   @override
