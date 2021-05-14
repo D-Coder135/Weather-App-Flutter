@@ -29,15 +29,15 @@ class _LoadingScreenState extends State<LoadingScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // body: Center(
-      //   // ignore: deprecated_member_use
-      //   child: RaisedButton(
-      //     onPressed: () {
-      //       getLocation();
-      //     },
-      //     child: Text('Get Location'),
-      //   ),
-      // ),
-    );
+        // body: Center(
+        //   // ignore: deprecated_member_use
+        //   child: RaisedButton(
+        //     onPressed: () {
+        //       getLocation();
+        //     },
+        //     child: Text('Get Location'),
+        //   ),
+        // ),
+        );
   }
 }
