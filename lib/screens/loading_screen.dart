@@ -19,9 +19,7 @@ class _LoadingScreenState extends State<LoadingScreen> {
       body: Center(
         // ignore: deprecated_member_use
         child: RaisedButton(
-          onPressed: () {
-            //Get the current location
-          },
+          onPressed: () {},
           child: Text('Get Location'),
         ),
       ),
