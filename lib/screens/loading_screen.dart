@@ -25,6 +25,7 @@ class _LoadingScreenState extends State<LoadingScreen> {
     //   print(exception);
     // }
     Location location = Location();
+    location.getCurrentLocation();
   }
 
   @override
