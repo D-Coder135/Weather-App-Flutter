@@ -40,6 +40,7 @@ class _LoadingScreenState extends State<LoadingScreen> {
 
   @override
   Widget build(BuildContext context) {
+    getData();
     return Scaffold(
         // body: Center(
         //   // ignore: deprecated_member_use
