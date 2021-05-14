@@ -37,7 +37,7 @@ class _LoadingScreenState extends State<LoadingScreen> {
     if (response.statusCode == 200) {
       String data = response.body;
       print(data);
-    }
+    } else {}
   }
 
   @override
