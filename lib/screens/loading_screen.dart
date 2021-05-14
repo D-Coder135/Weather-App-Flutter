@@ -10,6 +10,7 @@ class _LoadingScreenState extends State<LoadingScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
+        // ignore: deprecated_member_use
         child: RaisedButton(
           onPressed: () {
             //Get the current location
