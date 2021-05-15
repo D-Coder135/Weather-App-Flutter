@@ -33,7 +33,7 @@ class _LoadingScreenState extends State<LoadingScreen> {
       var decodeData = jsonDecode(data);
       double temperature = decodeData['main'][
           'temp']; // Method to fetch the value of a particular key from the json formatted file.
-      var conditionNumber = decodeData['weather'][0]['id'];
+      int conditionNumber = decodeData['weather'][0]['id'];
       var cityName = decodeData['name'];
       print(temperature);
       print(conditionNumber);
