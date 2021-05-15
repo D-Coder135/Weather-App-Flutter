@@ -1,6 +1,7 @@
 import 'package:clima/services/location.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http; // Added as http Just for reference.
+import 'dart:convert';
 
 class LoadingScreen extends StatefulWidget {
   @override
@@ -29,6 +30,7 @@ class _LoadingScreenState extends State<LoadingScreen> {
     http.Response response = await http.get(url);
     if (response.statusCode == 200) {
       String data = response.body;
+
       print(data);
     } else {
       print(response.statusCode);
