@@ -36,7 +36,7 @@ class _LoadingScreenState extends State<LoadingScreen> {
       String data = response.body;
       var decodeData = jsonDecode(data);
       double temperature = decodeData['main'][
-      'temp']; // Method to fetch the value of a particular key from the json formatted file.
+          'temp']; // Method to fetch the value of a particular key from the json formatted file.
       int conditionNumber = decodeData['weather'][0]['id'];
       String cityName = decodeData['name'];
       print(temperature);
@@ -51,15 +51,15 @@ class _LoadingScreenState extends State<LoadingScreen> {
   Widget build(BuildContext context) {
     getData();
     return Scaffold(
-      // body: Center(
-      //   // ignore: deprecated_member_use
-      //   child: RaisedButton(
-      //     onPressed: () {
-      //       getLocation();
-      //     },
-      //     child: Text('Get Location'),
-      //   ),
-      // ),
-    );
+        // body: Center(
+        //   // ignore: deprecated_member_use
+        //   child: RaisedButton(
+        //     onPressed: () {
+        //       getLocation();
+        //     },
+        //     child: Text('Get Location'),
+        //   ),
+        // ),
+        );
   }
 }
