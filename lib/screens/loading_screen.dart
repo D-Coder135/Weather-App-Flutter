@@ -30,7 +30,8 @@ class _LoadingScreenState extends State<LoadingScreen> {
     http.Response response = await http.get(url);
     if (response.statusCode == 200) {
       String data = response.body;
-      var temperature = jsonDecode(data)['main']['temp'];
+      var temperature = jsonDecode(data)['main'][
+          'temp']; // Method to fetch the value of a particular key from the json formatted file.
       print(data);
     } else {
       print(response.statusCode);
