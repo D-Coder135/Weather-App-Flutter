@@ -30,6 +30,7 @@ class _LoadingScreenState extends State<LoadingScreen> {
     http.Response response = await http.get(url);
     if (response.statusCode == 200) {
       String data = response.body;
+      var decodeData = jsonDecode(data);
       var temperature = jsonDecode(data)['main'][
           'temp']; // Method to fetch the value of a particular key from the json formatted file.
       var conditionNumber = jsonDecode(data)['weather'][0]['id'];
