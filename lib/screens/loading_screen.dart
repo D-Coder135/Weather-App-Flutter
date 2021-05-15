@@ -32,7 +32,7 @@ class _LoadingScreenState extends State<LoadingScreen> {
       String data = response.body;
       var temperature = jsonDecode(data)['main'][
           'temp']; // Method to fetch the value of a particular key from the json formatted file.
-      var id = jsonDecode(data)['weather'][0]['id'];
+      var conditionNumber = jsonDecode(data)['weather'][0]['id'];
       var cityName = jsonDecode(data)['name'];
       print(data);
     } else {
