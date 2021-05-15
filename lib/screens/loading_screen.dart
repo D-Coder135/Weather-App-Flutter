@@ -44,6 +44,7 @@ class _LoadingScreenState extends State<LoadingScreen> {
     return Scaffold(
       body: SpinKitChasingDots(
         color: Colors.blue,
+        size: 100.0,
       ),
     );
   }
