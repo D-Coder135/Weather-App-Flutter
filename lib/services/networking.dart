@@ -6,5 +6,5 @@ class NetworkHelper {
 
   NetworkHelper(this.url);
 
-  void getData() {}
+  void getData() async {}
 }
