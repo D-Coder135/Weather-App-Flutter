@@ -35,6 +35,7 @@ class _LoadingScreenState extends State<LoadingScreen> {
       var conditionNumber = jsonDecode(data)['weather'][0]['id'];
       var cityName = jsonDecode(data)['name'];
       print(temperature);
+      print(conditionNumber);
     } else {
       print(response.statusCode);
     }
