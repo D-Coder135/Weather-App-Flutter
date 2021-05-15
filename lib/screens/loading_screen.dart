@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http; // Added as http Just for reference.
 import 'dart:convert';
 
+const apiKey = '960991f38d501f8e644c4549c9aab49b';
+
 class LoadingScreen extends StatefulWidget {
   @override
   _LoadingScreenState createState() => _LoadingScreenState();
