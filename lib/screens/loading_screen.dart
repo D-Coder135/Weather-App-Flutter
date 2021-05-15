@@ -35,9 +35,6 @@ class _LoadingScreenState extends State<LoadingScreen> {
         'temp']; // Method to fetch the value of a particular key from the json formatted file.
     int conditionNumber = decodeData['weather'][0]['id'];
     String cityName = decodeData['name'];
-    print(temperature);
-    print(conditionNumber);
-    print(cityName);
   }
 
   @override
