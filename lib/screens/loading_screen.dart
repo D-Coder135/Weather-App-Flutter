@@ -31,10 +31,6 @@ class _LoadingScreenState extends State<LoadingScreen> {
     NetworkHelper networkHelper = NetworkHelper(
         'https://api.openweathermap.org/data/2.5/weather?lat=$latitude&lon=$longitude&appid=$apiKey');
     var weatherData = await networkHelper.getData();
-    double temperature = decodeData['main'][
-        'temp']; // Method to fetch the value of a particular key from the json formatted file.
-    int conditionNumber = decodeData['weather'][0]['id'];
-    String cityName = decodeData['name'];
   }
 
   @override
