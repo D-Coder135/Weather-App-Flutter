@@ -15,6 +15,8 @@ class _LocationScreenState extends State<LocationScreen> {
   int condition;
   String cityName;
 
+  void updateUI(var weatherData) {}
+
   @override
   void initState() {
     super.initState();
