@@ -43,7 +43,7 @@ class _LoadingScreenState extends State<LoadingScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SpinKitChasingDots(
-        color: Colors.blue,
+        color: Colors.red,
         size: 100.0,
       ),
     );
