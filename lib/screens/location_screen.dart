@@ -12,7 +12,7 @@ class LocationScreen extends StatefulWidget {
 
 class _LocationScreenState extends State<LocationScreen> {
   var temperature;
-  int condition;
+  var condition;
   String cityName;
 
   void updateUI(var weatherData) {
