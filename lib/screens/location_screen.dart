@@ -20,14 +20,16 @@ class _LocationScreenState extends State<LocationScreen> {
   var cityName;
 
   void updateUI(var weatherData) {
-    temperature = weatherData['main'][
-        'temp']; // Method to fetch the value of a particular key from the json formatted file.
-    weatherMessage = weatherModel.getMessage(temperature);
+    setState(() {
+      temperature = weatherData['main'][
+          'temp']; // Method to fetch the value of a particular key from the json formatted file.
+      weatherMessage = weatherModel.getMessage(temperature);
 
-    var condition = weatherData['weather'][0]['id'];
-    weatherIcon = weatherModel.getWeatherIcon(condition);
+      var condition = weatherData['weather'][0]['id'];
+      weatherIcon = weatherModel.getWeatherIcon(condition);
 
-    cityName = weatherData['name'];
+      cityName = weatherData['name'];
+    });
   }
 
   @override
