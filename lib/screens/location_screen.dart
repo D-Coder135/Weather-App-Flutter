@@ -16,7 +16,7 @@ class _LocationScreenState extends State<LocationScreen> {
   String cityName;
 
   void updateUI(var weatherData) {
-    double temp = weatherData['main'][
+    temperature = weatherData['main'][
         'temp']; // Method to fetch the value of a particular key from the json formatted file.
     condition = weatherData['weather'][0]['id'];
     cityName = weatherData['name'];
