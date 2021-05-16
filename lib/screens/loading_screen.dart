@@ -14,9 +14,6 @@ class LoadingScreen extends StatefulWidget {
 class _LoadingScreenState extends State<LoadingScreen> {
   // initState() method is called as soon as the application is opened. So if you want any functionality to be performed inside your app as soon as the app the opened (eg. Location Permission) then add the method call for that functionality inside the initState() method.
 
-  double latitude;
-  double longitude;
-
   @override
   void initState() {
     super.initState();
