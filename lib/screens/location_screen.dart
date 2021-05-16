@@ -18,7 +18,6 @@ class _LocationScreenState extends State<LocationScreen> {
   void updateUI(var weatherData) {
     double temp = weatherData['main'][
         'temp']; // Method to fetch the value of a particular key from the json formatted file.
-    temperature = temp.toInt();
     condition = weatherData['weather'][0]['id'];
     cityName = weatherData['name'];
   }
@@ -26,7 +25,6 @@ class _LocationScreenState extends State<LocationScreen> {
   @override
   void initState() {
     super.initState();
-
     updateUI(widget.locationWeather);
   }
 
