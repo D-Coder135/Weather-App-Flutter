@@ -15,6 +15,7 @@ class _LocationScreenState extends State<LocationScreen> {
   WeatherModel weatherModel = WeatherModel();
 
   var temperature;
+  String weatherMessage;
   String weatherIcon;
   var cityName;
 
