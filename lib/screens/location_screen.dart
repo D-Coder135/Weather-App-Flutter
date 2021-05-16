@@ -12,6 +12,7 @@ class LocationScreen extends StatefulWidget {
 
 class _LocationScreenState extends State<LocationScreen> {
   double tempreature;
+  int condition;
 
   @override
   void initState() {
