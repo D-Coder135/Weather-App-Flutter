@@ -91,8 +91,3 @@ class _LocationScreenState extends State<LocationScreen> {
     );
   }
 }
-
-// double temperature = decodeData['main'][
-// 'temp']; // Method to fetch the value of a particular key from the json formatted file.
-// int conditionNumber = decodeData['weather'][0]['id'];
-// String cityName = decodeData['name'];
