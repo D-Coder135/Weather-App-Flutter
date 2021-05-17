@@ -86,7 +86,8 @@ class _LocationScreenState extends State<LocationScreen> {
                         return CityScreen();
                       }));
                       if (typedName != null) {
-                        weatherModel.getTypedCityWeather(typedName);
+                        var weatherData =
+                            weatherModel.getTypedCityWeather(typedName);
                       }
                     },
                     child: Icon(
