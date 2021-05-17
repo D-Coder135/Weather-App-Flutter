@@ -1,3 +1,4 @@
+import 'package:clima/screens/city_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:clima/utilities/constants.dart';
 import 'package:clima/services/weather.dart';
@@ -29,7 +30,7 @@ class _LocationScreenState extends State<LocationScreen> {
         return;
       }
       temperature = weatherData['main'][
-          'temp']; // Method to fetch the value of a particular key from the json formatted file.
+      'temp']; // Method to fetch the value of a particular key from the json formatted file.
       weatherMessage = weatherModel.getMessage(temperature);
 
       var condition = weatherData['weather'][0]['id'];
@@ -79,7 +80,12 @@ class _LocationScreenState extends State<LocationScreen> {
                   ),
                   // ignore: deprecated_member_use
                   FlatButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) {
+                        return CityScreen();
+                      }));
+                    },
                     child: Icon(
                       Icons.location_city,
                       size: 50.0,
