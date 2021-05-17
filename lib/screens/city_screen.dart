@@ -49,7 +49,8 @@ class _CityScreenState extends State<CityScreen> {
               // ignore: deprecated_member_use
               FlatButton(
                 onPressed: () {
-                  Navigator.pop(context, cityName);
+                  Navigator.pop(context,
+                      cityName); // In this way we can pass a value backwards.
                 },
                 child: Text(
                   'Get Weather',
