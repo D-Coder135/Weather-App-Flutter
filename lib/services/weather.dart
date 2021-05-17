@@ -1,6 +1,8 @@
 import 'package:clima/services/location.dart';
 import 'package:clima/services/networking.dart';
 
+const apiKey = '960991f38d501f8e644c4549c9aab49b';
+
 class WeatherModel {
   void getLocationWeather() {
     Location location = Location();
