@@ -61,7 +61,7 @@ class _LocationScreenState extends State<LocationScreen> {
                 children: <Widget>[
                   // ignore: deprecated_member_use
                   FlatButton(
-                    onPressed: () {
+                    onPressed: () async {
                       var weatherData = weatherModel.getLocationWeather();
                     },
                     child: Icon(
