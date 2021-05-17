@@ -34,7 +34,9 @@ class _CityScreenState extends State<CityScreen> {
               ),
               Container(
                 padding: EdgeInsets.all(20.0),
-                child: TextField(),
+                child: TextField(
+                  decoration: InputDecoration(),
+                ),
               ),
               // ignore: deprecated_member_use
               FlatButton(
