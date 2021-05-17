@@ -30,7 +30,7 @@ class _LocationScreenState extends State<LocationScreen> {
         return;
       }
       temperature = weatherData['main'][
-      'temp']; // Method to fetch the value of a particular key from the json formatted file.
+          'temp']; // Method to fetch the value of a particular key from the json formatted file.
       weatherMessage = weatherModel.getMessage(temperature);
 
       var condition = weatherData['weather'][0]['id'];
