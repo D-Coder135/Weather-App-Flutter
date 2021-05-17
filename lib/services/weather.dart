@@ -7,6 +7,7 @@ const openWeatherMapURL = 'https://api.openweathermap.org/data/2.5/weather';
 class WeatherModel {
   void getTypedCityWeather(String cityName) {
     var url = '$openWeatherMapURL?q=$cityName&appid=$apiKey&units=metric';
+    NetworkHelper networkHelper = NetworkHelper(url);
   }
 
   Future<dynamic> getLocationWeather() async {
