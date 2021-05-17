@@ -26,6 +26,7 @@ class _LocationScreenState extends State<LocationScreen> {
         weatherIcon = 'Error';
         weatherMessage = 'Unable to get weather data';
         cityName = '?';
+        return;
       }
       temperature = weatherData['main'][
           'temp']; // Method to fetch the value of a particular key from the json formatted file.
