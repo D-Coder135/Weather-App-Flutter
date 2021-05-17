@@ -38,7 +38,7 @@ class _CityScreenState extends State<CityScreen> {
                   style: TextStyle(
                     color: Colors.black,
                   ),
-                    decoration:
+                  decoration: kTextFieldInputDecoration,
                 ),
               ),
               // ignore: deprecated_member_use
