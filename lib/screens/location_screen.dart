@@ -62,7 +62,7 @@ class _LocationScreenState extends State<LocationScreen> {
                   // ignore: deprecated_member_use
                   FlatButton(
                     onPressed: () async {
-                      var weatherData = weatherModel.getLocationWeather();
+                      var weatherData = await weatherModel.getLocationWeather();
                     },
                     child: Icon(
                       Icons.near_me,
