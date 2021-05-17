@@ -23,6 +23,7 @@ class _LocationScreenState extends State<LocationScreen> {
     setState(() {
       if (weatherData == null) {
         temperature = 0;
+        weatherIcon = 'Error';
       }
       temperature = weatherData['main'][
           'temp']; // Method to fetch the value of a particular key from the json formatted file.
