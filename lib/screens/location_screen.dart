@@ -88,6 +88,7 @@ class _LocationScreenState extends State<LocationScreen> {
                       if (typedName != null) {
                         var weatherData =
                             await weatherModel.getTypedCityWeather(typedName);
+                        updateUI(weatherData);
                       }
                     },
                     child: Icon(
