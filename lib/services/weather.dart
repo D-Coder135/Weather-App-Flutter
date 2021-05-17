@@ -2,7 +2,15 @@ import 'package:clima/services/location.dart';
 import 'package:clima/services/networking.dart';
 
 class WeatherModel {
-  void getLocationWeather() {}
+  void getLocationWeather() {
+    Location location = Location();
+    await location.getCurrentLocation();
+
+    NetworkHelper networkHelper = NetworkHelper(
+        'https://api.openweathermap.org/data/2.5/weather?lat=${location.latitude}&lon=${location.longitude}&appid=$apiKey&units=metric');
+
+    var weatherData = await networkHelper.getData();
+  }
 
   String getWeatherIcon(int condition) {
     if (condition < 300) {
