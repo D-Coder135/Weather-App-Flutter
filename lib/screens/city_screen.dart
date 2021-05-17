@@ -46,6 +46,7 @@ class _CityScreenState extends State<CityScreen> {
                     hintStyle: TextStyle(
                       color: Colors.grey,
                     ),
+                    border: OutlineInputBorder(),
                   ),
                 ),
               ),
