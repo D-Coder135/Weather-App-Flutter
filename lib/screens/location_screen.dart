@@ -81,7 +81,7 @@ class _LocationScreenState extends State<LocationScreen> {
                   // ignore: deprecated_member_use
                   FlatButton(
                     onPressed: () {
-                      Navigator.push(context,
+                      var typedName = Navigator.push(context,
                           MaterialPageRoute(builder: (context) {
                         return CityScreen();
                       }));
