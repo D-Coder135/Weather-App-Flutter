@@ -36,13 +36,15 @@ class _CityScreenState extends State<CityScreen> {
                 padding: EdgeInsets.all(20.0),
                 child: TextField(
                   decoration: InputDecoration(
-                      filled: true,
-                      fillColor: Colors.white,
-                      icon: Icon(
-                        Icons.location_city,
-                        color: Colors.white,
-                      ),
-                      hintText: 'Enter City Name'),
+                    filled: true,
+                    fillColor: Colors.white,
+                    icon: Icon(
+                      Icons.location_city,
+                      color: Colors.white,
+                    ),
+                    hintText: 'Enter City Name',
+                    hintStyle: TextStyle(),
+                  ),
                 ),
               ),
               // ignore: deprecated_member_use
