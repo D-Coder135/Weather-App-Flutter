@@ -27,7 +27,9 @@ class _CityScreenState extends State<CityScreen> {
                 alignment: Alignment.topLeft,
                 // ignore: deprecated_member_use
                 child: FlatButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.pop(context);
+                  },
                   child: Icon(
                     Icons.arrow_back_ios,
                     size: 50.0,
