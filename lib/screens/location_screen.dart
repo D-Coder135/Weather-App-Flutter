@@ -21,7 +21,9 @@ class _LocationScreenState extends State<LocationScreen> {
 
   void updateUI(var weatherData) {
     setState(() {
-      if (weatherData == null) {}
+      if (weatherData == null) {
+        temperature = 0;
+      }
       temperature = weatherData['main'][
           'temp']; // Method to fetch the value of a particular key from the json formatted file.
       weatherMessage = weatherModel.getMessage(temperature);
