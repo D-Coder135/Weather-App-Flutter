@@ -43,7 +43,9 @@ class _CityScreenState extends State<CityScreen> {
                       color: Colors.white,
                     ),
                     hintText: 'Enter City Name',
-                    hintStyle: TextStyle(),
+                    hintStyle: TextStyle(
+                      color: Colors.grey,
+                    ),
                   ),
                 ),
               ),
