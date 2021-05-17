@@ -41,7 +41,9 @@ class _CityScreenState extends State<CityScreen> {
                     color: Colors.black,
                   ),
                   decoration: kTextFieldInputDecoration,
-                  onChanged: (value) {},
+                  onChanged: (value) {
+                    cityName = value;
+                  },
                 ),
               ),
               // ignore: deprecated_member_use
